@@ -6,7 +6,7 @@ public class EntradaSalida{
 
             //Usar printf
             double precio=1300000.354789;
-            System.out.printf("El precio del producto %s tiene un valor de %5.2f y se han comprado %d" ,"Tablet",precio);
+            System.out.printf("El precio del producto %s tiene un valor de %5.2f y se han comprado %d" ,"Tablet",precio,valor);
             //Incluir un icono
             System.out.println("Que ganas tengo de unas vacaciones");
 
