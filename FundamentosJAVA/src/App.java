@@ -37,6 +37,9 @@ public class App {
            char c=98;
            System.out.println(b+" "+c);
            System.out.println(b);
+
+           System.out.println("hola");
+           System.err.println("un bonito error");
           
     }
 }
