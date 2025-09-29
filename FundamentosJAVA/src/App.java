@@ -6,7 +6,6 @@ public class App {
         String cadena="me llamo Domingo";
         int edad=40;
         double salario=13;
-        int x=5;
         int y=7;
         int z=10;
         //Defino una variable y la inicializo y la imprimo
