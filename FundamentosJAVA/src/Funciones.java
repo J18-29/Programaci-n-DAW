@@ -26,7 +26,7 @@ public class Funciones {
    //++ y --
    //No es lo mismo variable++ que ++variable
    int valor=1;
-   valor=--valor;
+   valor=--valor;//Forzar la diferencia,tú pondras en codigo solo--valor
    System.out.println(valor);
    valor=valor-1;
    System.out.println(valor);
@@ -42,7 +42,7 @@ public class Funciones {
    
 
      
-    }/Operador ternario
+    //Operador ternario
    int a=10,b=5;
    int x=a==10 ? b*2:a;
    System.out.println(x);
@@ -52,4 +52,7 @@ public class Funciones {
      //Si numero%2 es 0 Y numero%3 es 0 entonces
         //escribir numero es divisible por 2 y 3
    
+
+  
+}
 }
