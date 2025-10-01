@@ -1,6 +1,6 @@
  package actividades;
 
-import java.util.Scanner;
+
 
 class Ejercicios {
     /**
