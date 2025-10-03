@@ -8,6 +8,7 @@ public class Actividad6 {
         int opcion;
         double num1, num2, resultado;
 
+        //A cada variable se le asigna un numero;
         System.out.println("=== Calculadora ===");
         System.out.println("1. Suma");
         System.out.println("2. Resta");

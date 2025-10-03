@@ -18,9 +18,9 @@ public class Actividad5 {
             intento = sc.nextInt();
             intentos++;
 
-            if (intento > numeroSecreto) {
+            if (intento > numeroSecreto) { //Si el numero es mayor que el numero secreto;
                 System.out.println("Demasiado alto");
-            } else if (intento < numeroSecreto) {
+            } else if (intento < numeroSecreto) { //Si el numero es menor que el numero secreto;
                 System.out.println("Demasiado bajo");
             } else {
                 System.out.println("¡Correcto! Adivinaste el número en " + intentos + " intentos.");

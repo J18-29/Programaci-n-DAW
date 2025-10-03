@@ -15,7 +15,7 @@ public class Actividad4 {
         edad = sc.nextInt();
 
         while (edad != -1) {
-            suma += edad;
+            suma += edad; //suma=suma+edad;
             contador++;
 
             if (edad >= 18) {
