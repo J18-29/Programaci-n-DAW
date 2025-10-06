@@ -15,7 +15,7 @@ public class Continuación7{
         a = Math.abs(a);
         b = Math.abs(b);
 
-        // Algoritmo de Euclides para calcular el MCD
+        // Algoritmo para calcular el MCD
         while (b != 0) {
             int resto = a % b;
             a = b;
