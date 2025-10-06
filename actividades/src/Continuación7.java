@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Actividad7{
+public class Continuación7{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -11,21 +11,19 @@ public class Actividad7{
         System.out.print("Ingresa el segundo número: ");
         int b = sc.nextInt();
 
-        // Nos aseguramos de que sean positivos
+        // Nos aseguramos de que sean valores positivos
         a = Math.abs(a);
         b = Math.abs(b);
 
-        // Tomamos el mayor de los dos números
-        int mayor = Math.max(a, b);
-        int mcm = mayor;
-
-        // Repetimos hasta encontrar un número divisible por ambos
-        while (mcm % a != 0 || mcm % b != 0) {
-            mcm += mayor;
+        // Algoritmo de Euclides para calcular el MCD
+        while (b != 0) {
+            int resto = a % b;
+            a = b;
+            b = resto;
         }
 
         // Mostramos el resultado
-        System.out.println("El mcm es: " + mcm);
+        System.out.println("El MCD es: " + a);
 
         sc.close();
     }
