@@ -1,3 +1,5 @@
+package src;
+
 public class Actividad10 {
 
     public static boolean esPar(int n) {

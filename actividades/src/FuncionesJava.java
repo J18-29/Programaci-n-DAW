@@ -1,3 +1,5 @@
+package src;
+
 public class FuncionesJava {
     
     public static int suma(int numero1,int numero2){

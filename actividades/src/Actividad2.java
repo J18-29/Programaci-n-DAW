@@ -1,3 +1,5 @@
+package src;
+
 public class Actividad2 {
     public static void main(String[] args) {
         //Desarrolla un programa que calcule el factorial del número introducido. Ej: 4!= 4*3*2*1

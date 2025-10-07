@@ -1,3 +1,5 @@
+package src;
+
 public class Actividad8 {
     public static void main(String[] args) {
         //Programa que muestra las tablas de multiplicar del 1 al 10
