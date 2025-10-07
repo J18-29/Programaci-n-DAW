@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 public class Relacion1 {
 
     public static void main(String[] args) {
-        // Obtienela hora actual
+        // Obtiene la hora actual
         LocalDateTime ahora = LocalDateTime.now();
         int hora = ahora.getHour();  // Extraer solo la hora del día (0-23)
 
