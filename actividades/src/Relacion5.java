@@ -7,11 +7,11 @@ public class Relacion5 {
 
         // Arreglo con las materias de cada día de la semana (de lunes a viernes)
         String[] dias = {
-            "Lunes: Matemáticas, Física, Literatura",
-            "Martes: Química, Historia, Educación Física",
-            "Miércoles: Matemáticas, Inglés, Arte",
-            "Jueves: Física, Biología, Música",
-            "Viernes: Programación, Ética, Ciencias Sociales"
+            "Lunes: IPE,Sist.Informaticos,Bases de Datos,Programacion",
+            "Martes: LMSGI,Sist.Informaticos,Programacion,Ent.Desarrollo",
+            "Miércoles: Bases de Datos,Sist.Informaticos,Programacion",
+            "Jueves: Programacion,Ent.Desarrollo,IPE,Sostenibilidad",
+            "Viernes: Bases de Datos,Digitalizacion,LMSGI,IPE,Programación"
         };
 
         while (true) {
