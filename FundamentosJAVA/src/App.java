@@ -1,44 +1,25 @@
+import java.util.Scanner;
+
 public class App {
-   public static boolean logico=true;
-    final static double PI=3.141592; 
-      public static void main(String[] args) throws Exception{
-          // (TIPO) IDENTIFICADOR = VALOR;
-        String cadena="me llamo Domingo";
-        int edad=40;
-        double salario=13;
-        int y=7;
-        int z=10;
-        //Defino una variable y la inicializo y la imprimo
-        int variable=0;
-        System.out.println(variable);
+    public static void main(String[]arg) throws Exception{
+    String nombre1;
+    String Apellidos1;
+    int edad1;
+    double notaBD1;
+    double notaPROG1;
 
-        variable=33;
-        System.out.println(variable);
-        int resultado=1/3;
-        double resultado2=1/3.0;
-       
-       System.out.println(resultado);
-       System.out.println(resultado2);
-         
-         int a=(int)2.6;
-         System.out.println(a);
+    double[] calificaciones={7,8,2,4,8,9};
 
-         boolean logico=true; //false
-         System.out.println(App.logico);
+    double calificaciones2[];
 
-        final double PI=3.141592;
-        
-       
-        }
+   System.out.println(calificaciones[0]);
 
-           public static void imprimirTexto(){
-            int b='b'; //Un caracter se guarda en un enter segun ASCII
-           char c=98;
-           System.out.println(b+" "+c);
-           System.out.println(b);
-
-           System.out.println("hola");
-           System.err.println("un bonito error");
-          
-    }
+  //  System.out.println("Introduce el tamaño del array");
+  //  Scanner teclado= new Scanner(System.in);
+  //  int numero=teclado.nextInt();
+  calificaciones2=calificaciones;
+  System.out.println(calificaciones2[0]);
+  calificaciones=null;
+  System.out.println(calificaciones[0]);
+  }
 }

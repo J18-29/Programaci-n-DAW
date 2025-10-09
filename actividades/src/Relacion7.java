@@ -12,7 +12,7 @@ public class Relacion7 {
         System.out.println("Introduce números (0 para terminar):");
 
         do {
-            numero = sc.nextInt();  // Lee un número del usuario
+            numero = sc.nextInt();  // Lee un número que introduces
 
             if (numero > 0) {
                 positivos++;  // Si es positivo, aumenta contador positivo
