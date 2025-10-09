@@ -1,19 +1,39 @@
-
+import java.util.Scanner;
 
 public class Decimal {
-   //Método recursivo para pasar un número decimal, que es positivo, y pasarlo a binario mediantesucesivas divisiones por 2
-     public static String pasarBinario(int n){
-         String cadena = "";
-        if(n==0){
-            return cadena;
+    // Método recursivo para convertir decimal a binario
+    public static String pasarBinario(int n) {
+        if (n == 0) {
+            return "0";
+        } else if (n == 1) {
+            return "1";
+        } else {
+            return pasarBinario(n / 2) + (n % 2);
         }
-         else{
-            cadena=cadena+n%2;
-            pasarBinario(n/2);
-         }
-        return cadena ;
     }
 
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String opcion;
 
+        do {
+            System.out.print("Introduce un número entero positivo: ");
+            int numero = scanner.nextInt();
 
+            if (numero < 0) {
+                System.out.println("Por favor, introduce solo números positivos.");
+            } else {
+                String binario = pasarBinario(numero);
+                System.out.println("El número " + numero + " en binario es: " + binario);
+            }
+
+            System.out.print("¿Deseas convertir otro número? (s/n): ");
+            opcion = scanner.next();
+        } while (opcion.equalsIgnoreCase("s"));
+
+        System.out.println("Programa finalizado.");
+        scanner.close();
+    }
 }
+
+
