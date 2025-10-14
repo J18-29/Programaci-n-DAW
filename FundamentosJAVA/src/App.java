@@ -4,6 +4,10 @@ public class App {
   public static double devolverArrray(double[]) {
     
   }
+    /**
+     * @param arg
+     * @throws Exception
+     */
     public static void main(String[]arg) throws Exception{
     String nombre1;
     String Apellidos1;
@@ -42,10 +46,11 @@ System.out.println(resultado[1]);
 calificaciones2[3]=5;
 System.out.println(calificaciones2[3]);
 System.out.println(calificaciones2[1]);
-  }
 
-    private static void imprimeArray(double[] calificaciones) {
-      // TODO Auto-generated method stub
-      throw new UnsupportedOperationException("Unimplemented method 'imprimeArray'");
-    }
+int[][] matriz={{1,2},{3,4}}; 
+for(int i=0;i<2;i++){ 
+  for (int j=0;j<2;j++) System.out.print(matriz[i][j]+" "); 
+  System.out.println(); } 
+  }
+ 
 }
