@@ -19,8 +19,8 @@ public class Funciones1{
     public static void main(String[] args) {
         int[] miArray = {10, 20, 30, 40, 50};
 
-        buscarNumero(miArray, 20);  // Salida: posición 2
-        buscarNumero(miArray, 40);  // Salida: no se encuentra
+        buscarNumero(miArray, 10);  // Salida: posición 2
+        buscarNumero(miArray, 70);  // Salida: no se encuentra
     }
 }
 
