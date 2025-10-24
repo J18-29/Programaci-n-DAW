@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Arrays1 {
     public static void main(String[] args) {
         //Crear el vector dinamico
@@ -6,9 +8,12 @@ public class Arrays1 {
         vector=push(vector, 3);
         //Inserta un valor
         vector=push(vector, 5);
-         for(int i=0;i<vector.length;i++){
-            System.out.print(vector[i]+"");
-         }
+          Scanner teclado=new Scanner(System.in);
+         System.out.println("Introduce la cantidad de numeros que desee:");
+         vector=push(vector,teclado.nextInt());
+         System.out.println("Su numero es:" + vector[1] + vector[2]);
+         System.out.println( vector[2]);
+        
         //Elimina el último
         int valor=pop(vector);
         System.out.println(valor);
