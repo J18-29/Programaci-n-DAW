@@ -7,3 +7,8 @@ public class Muestra {
         System.out.println();
     }
 }
+ 
+
+//El + "" convierte el valor numérico en una cadena antes de imprimirlo. 
+//En este caso no es necesario, porque System.out.print() ya puede imprimir enteros directamente. 
+//Solo se usaría si quisiéramos forzar que el resultado sea tratado como texto
