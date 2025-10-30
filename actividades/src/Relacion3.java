@@ -10,7 +10,7 @@ public class Relacion3 {
         System.out.print("Introduce el día de nacimiento: ");
         int dia = entrada.nextInt();
 
-        System.out.print("Introduce el mes de nacimiento (en número): ");
+        System.out.print("Introduce el mes de nacimiento : ");
         int mes = entrada.nextInt();
 
         String signo = "";
