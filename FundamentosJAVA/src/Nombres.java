@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Nombres {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        ArrayList<String> nombres = new ArrayList<>();
+        ArrayList<String> nombres = new ArrayList<>(); //Creacion de la lista vacia
 
         System.out.println("Introduce nombres (escribe 'fin' para terminar):");
 

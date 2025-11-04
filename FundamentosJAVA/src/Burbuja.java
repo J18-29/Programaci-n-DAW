@@ -76,6 +76,5 @@ public class Burbuja {
 
 
     String texto="hola, domingo, buenos dias";
-    String[] salida=texto.split(",");
     }
 }
