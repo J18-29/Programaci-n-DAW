@@ -61,9 +61,9 @@ public class Ahorcado {
 
         // Resultado final
         if (acertado) {
-            System.out.println("\n🎉 ¡Felicidades! Has adivinado la palabra: " + palabraSecreta);
+            System.out.println("\n ¡Felicidades! Has adivinado la palabra: " + palabraSecreta);
         } else {
-            System.out.println("\n💀 Has perdido. La palabra era: " + palabraSecreta);
+            System.out.println("\n Has perdido. La palabra era: " + palabraSecreta);
         }
 
         sc.close();
