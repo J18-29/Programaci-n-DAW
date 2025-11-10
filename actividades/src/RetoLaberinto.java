@@ -49,7 +49,6 @@ public class RetoLaberinto {
 
         int opcion = sc.nextInt();
 
-        // Variable para guardar el laberinto seleccionado
         char[][] laberintoSeleccionado = null;
         String nombre = "";
 
@@ -76,12 +75,12 @@ public class RetoLaberinto {
             }
         }
 
-        // === RESOLVER EL LABERINTO SELECCIONADO ===
         int N = laberintoSeleccionado.length;
         int[][] solucion = new int[N][N];
+        boolean[][] visitado = new boolean[N][N]; // <--- NUEVO
 
         System.out.println("\n=== " + nombre + " ===");
-        if (resolverDesde(0, 0, laberintoSeleccionado, solucion)) {
+        if (resolverDesde(0, 0, laberintoSeleccionado, solucion, visitado)) {
             imprimirSolucion(solucion);
         } else {
             System.out.println("No existe camino");
@@ -91,37 +90,27 @@ public class RetoLaberinto {
     }
 
     // === FUNCIÓN resolverDesde ===
-    public static boolean resolverDesde(int x, int y, char[][] laberinto, int[][] solucion) {
+    public static boolean resolverDesde(int x, int y, char[][] laberinto, int[][] solucion, boolean[][] visitado) {
         int N = laberinto.length;
 
-        // Caso base: si llegamos a la salida
+        // Caso base: llegada a la salida
         if (x == N - 1 && y == N - 1 && laberinto[x][y] == '0') {
             solucion[x][y] = 1;
             return true;
         }
 
-        // Si la posición es segura
-        if (esSeguro(x, y, laberinto)) {
-            // Marcar la posición actual como parte del camino
+        if (esSeguro(x, y, laberinto) && !visitado[x][y]) {
+            // Marcar como parte del camino
             solucion[x][y] = 1;
+            visitado[x][y] = true; // <--- EVITA CICLOS
 
-            // Mover abajo
-            if (resolverDesde(x + 1, y, laberinto, solucion))
-                return true;
+            // Moverse en las cuatro direcciones
+            if (resolverDesde(x + 1, y, laberinto, solucion, visitado)) return true;
+            if (resolverDesde(x, y + 1, laberinto, solucion, visitado)) return true;
+            if (resolverDesde(x - 1, y, laberinto, solucion, visitado)) return true;
+            if (resolverDesde(x, y - 1, laberinto, solucion, visitado)) return true;
 
-            // Mover derecha
-            if (resolverDesde(x, y + 1, laberinto, solucion))
-                return true;
-
-            // Mover arriba
-            if (resolverDesde(x - 1, y, laberinto, solucion))
-                return true;
-
-            // Mover izquierda
-            if (resolverDesde(x, y - 1, laberinto, solucion))
-                return true;
-
-            // Retroceder (backtracking)
+            // Retroceder
             solucion[x][y] = 0;
             return false;
         }
@@ -138,11 +127,12 @@ public class RetoLaberinto {
     // === FUNCIÓN imprimirSolucion ===
     public static void imprimirSolucion(int[][] solucion) {
         System.out.println("Camino encontrado:");
-        for (int i = 0; i < solucion.length; i++) {
-            for (int j = 0; j < solucion[i].length; j++) {
-                System.out.print(solucion[i][j] + " ");
+        for (int[] fila : solucion) {
+            for (int celda : fila) {
+                System.out.print(celda + " ");
             }
             System.out.println();
         }
     }
 }
+
