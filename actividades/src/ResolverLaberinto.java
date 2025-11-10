@@ -6,8 +6,8 @@ public class ResolverLaberinto {
         char[][] laberinto = {
             {'0', '0', '#', '0'},
             {'#', '0', '#', '0'},
-            {'0', '0', '0', '0'},
-            {'0', '#', '#', '0'}
+            {'0', '0', '0', '#'},
+            {'0', '#', '0', '0'}
         };
 
         int N = laberinto.length;
