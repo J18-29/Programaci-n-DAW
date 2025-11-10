@@ -8,7 +8,7 @@ public class OchosReinas {
         Scanner sc = new Scanner(System.in);
         int[][] tablero = new int[N][N];
 
-        System.out.print("Introduce la columna (0-7) para la primera reina: ");
+        System.out.print("Introduce la columna (1-8) para la primera reina: ");
         int primeraColumna = sc.nextInt();
 
         // Colocar la primera reina en la fila 0
