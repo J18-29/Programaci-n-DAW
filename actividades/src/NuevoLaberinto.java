@@ -2,12 +2,14 @@ public class NuevoLaberinto {
 
     public static void main(String[] args) {
         // Ejemplo de laberinto: 0 = camino libre, # = pared
-        char[][] laberinto = {
-            {'0', '0', '#', '0'},
-            {'#', '0', '#', '0'},
-            {'0', '0', '0', '0'},
-            {'0', '#', '#', '0'}
-        };
+        
+        //Laberinto
+       char[][] laberinto = {
+       {'0', '0', '#', '0'},
+       {'#', '0', '#', '0'},
+       {'#', '0', '0', '0'},
+       {'#', '#', '0', '0'}
+       } ;
 
         int N = laberinto.length;
         int[][] solucion = new int[N][N];
