@@ -11,8 +11,15 @@ public class OchosReinas {
         System.out.print("Introduce la columna (1-8) para la primera reina: ");
         int primeraColumna = sc.nextInt();
 
-        // Colocar la primera reina en la fila 0
-        tablero[0][primeraColumna] = 1;
+        // Validar entrada
+        if (primeraColumna < 1 || primeraColumna > 8) {
+            System.out.println("Columna fuera de rango. Debe ser entre 1 y 8.");
+            sc.close();
+            return;
+        }
+
+        // Colocar la primera reina en la fila 0 (ajuste de índice)
+        tablero[0][primeraColumna - 1] = 1;
 
         // Intentar resolver el resto
         if (resolver(tablero, 1)) {
@@ -25,20 +32,21 @@ public class OchosReinas {
         sc.close();
     }
 
-    // Función recursiva
+    // Función recursiva que intenta colocar una reina por fila
     static boolean resolver(int[][] tablero, int fila) {
-        if (fila == N) return true; // Solución completa
+        if (fila == N) return true; // Todas las reinas colocadas
 
         for (int col = 0; col < N; col++) {
             if (esSeguro(tablero, fila, col)) {
                 tablero[fila][col] = 1;
                 if (resolver(tablero, fila + 1)) return true;
-                tablero[fila][col] = 0; // retroceder
+                tablero[fila][col] = 0; // backtrack
             }
         }
         return false;
     }
 
+    // Comprueba si es seguro colocar una reina en (fila, col)
     static boolean esSeguro(int[][] tablero, int fila, int col) {
         // Comprobar columna
         for (int i = 0; i < fila; i++)
@@ -58,6 +66,7 @@ public class OchosReinas {
         return true;
     }
 
+    // Imprime el tablero con las reinas colocadas
     static void imprimirTablero(int[][] tablero) {
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
