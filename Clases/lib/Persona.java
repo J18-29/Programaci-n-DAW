@@ -4,18 +4,24 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.Scanner;
 
+enum ESTUDIOS{
+    ESO,BACHILLERATO,UNIVERSIDAD,DOCTORADO
+}
+
 public class Persona {
     // === Atributos ===
     private String dni;
     private LocalDate fechaNacimiento;
     public int hijos;
     private Persona pareja;
+    ESTUDIOS educacion;
 
     // === Constructores ===
     public Persona(String dni, String fechaNacimiento) {
         this.dni = dni;
         this.hijos = 0; // por defecto
         setFechaNacimiento(fechaNacimiento);
+        educacion=ESTUDIOS.ESO; 
     }
 
     public Persona(String dni, String fechaNacimiento, int hijos) {
