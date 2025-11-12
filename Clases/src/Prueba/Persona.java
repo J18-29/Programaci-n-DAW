@@ -24,7 +24,7 @@ public class Persona {
         return this.edad;
     }
     public void imprimePersona() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'imprimePersona'");
+       
+        
     }
 }
