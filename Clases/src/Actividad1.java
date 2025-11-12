@@ -10,5 +10,7 @@ public class Actividad1 {
         double b=5;
 
         System.out.println(Matematicas.division(a, b));
+
+        System.out.println(p.getEdad(2));
     }
 }

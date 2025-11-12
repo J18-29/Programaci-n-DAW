@@ -1,7 +1,7 @@
 package Prueba;
 
 public class Persona {
-    String nombre;
+    public String nombre;
     int edad;
 
     public Persona(){
