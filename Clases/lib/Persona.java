@@ -94,7 +94,7 @@ public class Persona {
         Persona p2 = new Persona(dni2, fecha2, hijos2);
 
         // === 2) Asignar pareja y mostrar datos ===
-        System.out.println("\n[2️⃣] Asignando pareja...");
+        System.out.println("\n[2] Asignando pareja...");
         p1.asignaPareja(p2);
         p2.asignaPareja(p1);
 
