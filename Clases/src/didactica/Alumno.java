@@ -2,7 +2,6 @@ package didactica;
 
 public class Alumno {
     public String Nombre;
-    private double notaMedia;
     String direccion;
 
     public Alumno(){
