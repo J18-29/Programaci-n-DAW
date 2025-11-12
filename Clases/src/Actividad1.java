@@ -9,6 +9,6 @@ public class Actividad1 {
         double a=4;
         double b=5;
 
-        System.out.println(Matematicas.suma(a, b));
+        System.out.println(Matematicas.division(a, b));
     }
 }
