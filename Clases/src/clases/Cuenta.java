@@ -1,4 +1,5 @@
-package Prueba;
+package clases;
+
 
 public class Cuenta {
     String numeroCuenta;
@@ -14,9 +15,12 @@ public class Cuenta {
         this.cliente=p;
     }
 
-    //get set
+    //get y set
 
     public void imprimeCuenta(){
-        
+        System.out.println("Número de cuenta bancaria: "+this.numeroCuenta);
+        System.out.println("Saldo de la cuenta: "+this.saldo);
+        this.cliente.imprimePersona();
     }
+    
 }
