@@ -1,6 +1,7 @@
 package clases;
 
 public class Persona2 {
+    //Atributos
     private String cedula;
     private String nombre;
     private String apellido;
