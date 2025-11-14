@@ -13,14 +13,26 @@ public class Ciudad {
     }
 
     // Getters y Setters
-    public int getCodigo() { return codigo; }
-    public void setCodigo(int codigo) { this.codigo = codigo; }
+    public int getCodigo() { 
+        return codigo; 
+    }
+    public void setCodigo(int codigo) { 
+        this.codigo = codigo; 
+    }
 
-    public String getNombre() { return nombre; }
-    public void setNombre(String nombre) { this.nombre = nombre; }
+    public String getNombre() { 
+        return nombre; 
+    }
+    public void setNombre(String nombre) { 
+        this.nombre = nombre;
+     }
 
-    public int getIndicativo() { return indicativo; }
-    public void setIndicativo(int indicativo) { this.indicativo = indicativo; }
+    public int getIndicativo() { 
+        return indicativo; 
+    }
+    public void setIndicativo(int indicativo) {
+         this.indicativo = indicativo;
+         }
 
     // Mostrar información
     public void mostrarCiudad() {
