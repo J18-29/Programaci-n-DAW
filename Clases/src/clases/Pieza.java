@@ -8,6 +8,7 @@ public class Pieza {
 
     private Categoria categoria;  // Relación pertenece
 
+     //Constructores
     public Pieza(int codigo, String nombre, String color, double precio, Categoria categoria) {
         this.codigo = codigo;
         this.nombre = nombre;
@@ -16,6 +17,7 @@ public class Pieza {
         this.categoria = categoria;
     }
 
+    //Get y Set
     public int getCodigo() { 
         return codigo; 
     }
@@ -50,7 +52,8 @@ public class Pieza {
     public void setCategoria(Categoria categoria) { 
         this.categoria = categoria;
      }
-
+    
+     //Imprimir resultado
     @Override
     public String toString() {
         return "Pieza [codigo=" + codigo + ", nombre=" + nombre + 

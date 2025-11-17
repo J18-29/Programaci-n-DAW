@@ -6,6 +6,7 @@ public class Proveedor {
     private String ciudad;
     private String provincia;
 
+     //Constructor
     public Proveedor(int codigo, String direccion, String ciudad, String provincia) {
         this.codigo = codigo;
         this.direccion = direccion;
@@ -13,6 +14,7 @@ public class Proveedor {
         this.provincia = provincia;
     }
 
+     //Get y Set
     public int getCodigo() { 
         return codigo; 
     }
@@ -40,7 +42,8 @@ public class Proveedor {
     public void setProvincia(String provincia) { 
         this.provincia = provincia;
      }
-
+     
+     //Imprimir resultado
     @Override
     public String toString() {
         return "Proveedor [codigo=" + codigo + ", direccion=" + direccion + 

@@ -8,6 +8,7 @@ public class ProveedorSuministraPieza {
     private LocalDateTime fechaHora;
     private int cantidad;
 
+    //Constructores
     public ProveedorSuministraPieza(Proveedor proveedor, Pieza pieza,LocalDateTime fechaHora, int cantidad) {
         this.proveedor = proveedor;
         this.pieza = pieza;
@@ -15,6 +16,7 @@ public class ProveedorSuministraPieza {
         this.cantidad = cantidad;
     }
 
+    //Get y Set
     public Proveedor getProveedor() { 
         return proveedor;
      }
@@ -43,6 +45,7 @@ public class ProveedorSuministraPieza {
         this.cantidad = cantidad;
      }
 
+     //Imprimir resultado
     @Override
     public String toString() {
         return "ProveedorSuministraPieza [proveedor=" + proveedor.getCodigo() +
