@@ -16,17 +16,33 @@ public class ProveedorSuministraPieza {
         this.cantidad = cantidad;
     }
 
-    public Proveedor getProveedor() { return proveedor; }
-    public void setProveedor(Proveedor proveedor) { this.proveedor = proveedor; }
+    public Proveedor getProveedor() { 
+        return proveedor;
+     }
+    public void setProveedor(Proveedor proveedor) { 
+        this.proveedor = proveedor;
+     }
 
-    public Pieza getPieza() { return pieza; }
-    public void setPieza(Pieza pieza) { this.pieza = pieza; }
+    public Pieza getPieza() { 
+        return pieza; 
+    }
+    public void setPieza(Pieza pieza) { 
+        this.pieza = pieza; 
+    }
 
-    public LocalDateTime getFechaHora() { return fechaHora; }
-    public void setFechaHora(LocalDateTime fechaHora) { this.fechaHora = fechaHora; }
+    public LocalDateTime getFechaHora() { 
+        return fechaHora; 
+    }
+    public void setFechaHora(LocalDateTime fechaHora) { 
+        this.fechaHora = fechaHora;
+     }
 
-    public int getCantidad() { return cantidad; }
-    public void setCantidad(int cantidad) { this.cantidad = cantidad; }
+    public int getCantidad() { 
+        return cantidad;
+     }
+    public void setCantidad(int cantidad) { 
+        this.cantidad = cantidad;
+     }
 
     @Override
     public String toString() {
