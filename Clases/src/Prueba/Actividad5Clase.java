@@ -6,6 +6,7 @@ import clases.Pieza;
 import clases.Proveedor;
 import clases.ProveedorSuministraPieza;
 
+//Crear Clases
 public class Actividad5Clase {
     public static void main(String[] args) {
         Categoria cat = new Categoria(1, "Electrónica");
