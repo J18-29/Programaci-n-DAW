@@ -8,8 +8,7 @@ public class ProveedorSuministraPieza {
     private LocalDateTime fechaHora;
     private int cantidad;
 
-    public ProveedorSuministraPieza(Proveedor proveedor, Pieza pieza,
-                                   LocalDateTime fechaHora, int cantidad) {
+    public ProveedorSuministraPieza(Proveedor proveedor, Pieza pieza,LocalDateTime fechaHora, int cantidad) {
         this.proveedor = proveedor;
         this.pieza = pieza;
         this.fechaHora = fechaHora;
