@@ -1,7 +1,6 @@
 package Prueba;
 
 import java.time.LocalDateTime;
-
 import clases.Categoria;
 import clases.Pieza;
 import clases.Proveedor;
