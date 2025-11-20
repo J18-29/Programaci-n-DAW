@@ -47,13 +47,17 @@ public class CocheNuevo {
         this.extras = extras;
     }
 
-    @Override
-    public String toString() {
-        return "CocheNuevo [id=" + id + ", matricula=" + matricula + ", version=" + version + ", extras=" + extras
-                + "]";
+    // 👌 MÉTODO QUE TE FALTABA
+    public void addExtra(Extra extra) {
+        extras.add(extra);
     }
 
-    
-
+    @Override
+    public String toString() {
+        return "CocheNuevo [id=" + id + 
+               ", matricula=" + matricula + 
+               ", version=" + version + 
+               ", extras=" + extras + "]";
+    }
 }
 
