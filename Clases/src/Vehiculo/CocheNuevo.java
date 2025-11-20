@@ -53,11 +53,25 @@ public class CocheNuevo {
     }
 
     @Override
-    public String toString() {
-        return "CocheNuevo [id=" + id + 
-               ", matricula=" + matricula + 
-               ", version=" + version + 
-               ", extras=" + extras + "]";
+public String toString() {
+    StringBuilder sb = new StringBuilder();
+
+    sb.append("Coche Nuevo:\n");
+    sb.append("  ID: ").append(id).append("\n");
+    sb.append("  Matrícula: ").append(matricula).append("\n");
+    sb.append("  Versión: ").append(version).append("\n");
+
+    sb.append("  Extras:\n");
+    if (extras.isEmpty()) {
+        sb.append("    (Sin extras)\n");
+    } else {
+        for (Extra extra : extras) {
+            sb.append("    - ").append(extra).append("\n");
+        }
     }
+
+    return sb.toString();
+}
+
 }
 

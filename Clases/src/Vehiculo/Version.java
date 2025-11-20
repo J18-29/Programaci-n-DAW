@@ -66,10 +66,10 @@ public class Version {
     }
 
     @Override
-    public String toString() {
-        return "Version [id=" + id + ", nombre=" + nombre + ", potencia=" + potencia + ", precioBase=" + precioBase
-                + ", tipoCombustible=" + tipoCombustible + ", modelo=" + modelo + "]";
-    }
+public String toString() {
+    return nombre + " - " + potencia + " CV - " + precioBase + "€ (" + modelo + ")";
+}
+
 
     
 }

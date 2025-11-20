@@ -46,8 +46,9 @@ public class Extra {
     }
 
     @Override
-    public String toString() {
-        return "Extra [id=" + id + ", nombre=" + nombre + ", descripcion=" + descripcion + ", precio=" + precio + "]";
-    }
+public String toString() {
+    return nombre + " (" + descripcion + ") - " + precio + "€";
+}
+
 
 }
