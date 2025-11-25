@@ -1,4 +1,4 @@
-package clases;
+package Clases;
 
 public class Ciudad {
     private int codigo;

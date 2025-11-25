@@ -1,4 +1,4 @@
-package clases;
+package Clases;
 public class Empleado {
     private int id;
     private String nif;

@@ -1,4 +1,4 @@
-package clases;
+package Clases;
 public class Periodista {
     private int id;
     private String nombre;

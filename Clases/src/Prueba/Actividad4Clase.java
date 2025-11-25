@@ -1,8 +1,8 @@
 package Prueba;
 
-import clases.Ciudad;
-import clases.Fecha;
-import clases.Persona2;
+import Clases.Ciudad;
+import Clases.Fecha;
+import Clases.Persona2;
 
 public class Actividad4Clase {
     public static void main(String[] args) {

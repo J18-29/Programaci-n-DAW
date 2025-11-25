@@ -1,4 +1,4 @@
-package clases;
+package Clases;
 public class Seccion {
     private String titulo;
     private int extension;

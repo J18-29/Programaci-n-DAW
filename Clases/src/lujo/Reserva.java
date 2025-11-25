@@ -1,4 +1,4 @@
-package lujo;
+package Lujo;
 public class Reserva {
 
      Turista turista;

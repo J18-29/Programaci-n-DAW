@@ -1,10 +1,11 @@
 package Prueba;
 
 import java.time.LocalDateTime;
-import clases.Categoria;
-import clases.Pieza;
-import clases.Proveedor;
-import clases.ProveedorSuministraPieza;
+
+import Clases.Categoria;
+import Clases.Pieza;
+import Clases.Proveedor;
+import Clases.ProveedorSuministraPieza;
 
 //Crear Clases
 public class Actividad5Clase {

@@ -1,7 +1,7 @@
 package Prueba;
 
-import clases.Editorial;
-import clases.Libro;
+import Clases.Editorial;
+import Clases.Libro;
 
 public class Actividad3Clase {
     public static void main(String[] args) {

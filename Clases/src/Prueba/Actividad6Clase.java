@@ -1,11 +1,11 @@
 package Prueba;
 
-import clases.Ejemplar;
-import clases.Empleado;
-import clases.Periodista;
-import clases.Revista;
-import clases.Seccion;
-import clases.Surcursal;
+import Clases.Ejemplar;
+import Clases.Empleado;
+import Clases.Periodista;
+import Clases.Revista;
+import Clases.Seccion;
+import Clases.Surcursal;
 
 public class Actividad6Clase{
     public static void main(String[] args) {

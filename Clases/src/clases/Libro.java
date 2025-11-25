@@ -1,4 +1,4 @@
-package clases;
+package Clases;
 
 
 public class Libro {
@@ -46,11 +46,7 @@ public class Libro {
     public void setEditorial(Editorial ed){
         //Opcion 1: una referencia
         this.editorial=ed;
-        //Opcion 2: una copia
-        // this.editorial=new Editorial();
-        // this.editorial.setAnyo(ed.getAnyo());
-        // this.editorial.setNombre(ed.getNombre());
-        // this.editorial.setCodigo(ed.getCodigo());
+        
 
     }
     public Editorial getEditorial(){

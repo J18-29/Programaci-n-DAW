@@ -1,4 +1,4 @@
-package lujo;
+package Lujo;
 
 public class Sucursal {
     int id;
