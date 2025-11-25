@@ -13,14 +13,21 @@ public class Usuario {
     }
 
     public void prestarLibro(Libro libro) {
-        if (libro.prestar()) {
-            librosPrestados.add(libro);
-            System.out.println(nombre + " ha prestado: " + libro.getNombre());
-        } else {
-            System.out.println("No hay ejemplares disponibles de: " + libro.getNombre());
-        }
+    // 1. VERIFICACIÓN DE DOBLE PRÉSTAMO (NUEVA LÓGICA)
+    if (librosPrestados.contains(libro)) {
+        System.out.println(" ERROR: " + nombre + " ya tiene prestado el libro: " + libro.getNombre());
+        return; // Detiene la operación aquí
     }
 
+    // 2. VERIFICACIÓN DE STOCK (LÓGICA EXISTENTE)
+    if (libro.prestar()) {
+        librosPrestados.add(libro);
+        System.out.println(nombre + " ha prestado: " + libro.getNombre());
+    } else {
+        // Mensaje cuando el stock llega a cero
+        System.out.println(" AGOTADO: No hay ejemplares disponibles de: " + libro.getNombre());
+    }
+}
     public void devolverLibro(Libro libro) {
         if (librosPrestados.contains(libro)) {
             libro.devolver();
