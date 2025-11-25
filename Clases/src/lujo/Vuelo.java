@@ -1,4 +1,4 @@
-package Lujo;
+package lujo;
 
 public class Vuelo {
     int id;
