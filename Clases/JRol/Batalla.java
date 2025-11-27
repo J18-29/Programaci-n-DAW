@@ -13,7 +13,8 @@ public class Batalla {
 
     public void mostrarMenu() {
         int opcion;
-
+           
+        //Creamos el menu de opciones
         do {
             System.out.println("\n--- MENU BATALLA ---");
             System.out.println("1. Crear héroe (Caballero / Mago)");
@@ -36,9 +37,10 @@ public class Batalla {
             }
         } while (opcion != 5);
     }
-
+     //Creacion del personaje
+     //Nota:No le pongais vida negativa 
     public void crearPersonaje(boolean esOrco) {
-        sc.nextLine(); // limpia buffer
+        sc.nextLine(); 
 
         System.out.print("Nombre: ");
         String nombre = sc.nextLine();
@@ -54,6 +56,7 @@ public class Batalla {
 
         Tipo tipo;
 
+        //Definimos si el personaje es un heroe elegimos si es mago o caballero
         if (esOrco) {
             tipo = Tipo.ORCO;
         } else {
@@ -61,7 +64,8 @@ public class Batalla {
             int t = sc.nextInt();
             tipo = (t == 1 ? Tipo.CABALLERO : Tipo.MAGO);
         }
-
+         
+        //Mostramos el personaje creado
         Personaje p = new Personaje(nombre, vida, ataque, defensa, tipo);
 
         if (esOrco) {
@@ -72,7 +76,9 @@ public class Batalla {
 
         System.out.println("Personaje creado: " + p);
     }
-
+  
+     //Mostramos las lista de Ambos jugadores
+     //Nota:Aseguraos de que habeis creado los personajes, si no las listas apareceran vacias
     public void muestraListas() {
         System.out.println("\n--- HÉROES ---");
         heroes.forEach(System.out::println);
@@ -81,6 +87,7 @@ public class Batalla {
         orcos.forEach(System.out::println);
     }
 
+    //Inicamos la batalla
     public void iniciaBatalla() {
 
         if (heroes.isEmpty() || orcos.isEmpty()) {
@@ -114,6 +121,7 @@ public class Batalla {
             }
         }
 
+        //Mostramos el resultado de la batalla
         if (heroes.isEmpty()) {
             System.out.println("\n=== ¡LOS ORCOS GANAN! ===");
         } else {

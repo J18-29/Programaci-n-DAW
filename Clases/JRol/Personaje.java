@@ -9,18 +9,27 @@ public class Personaje {
 
     public Personaje(String nombre, int vida, int ataque, int defensa, Tipo tipo) {
         this.nombre = nombre;
-        this.vida = vida;
+
+        if (vida < 0) {
+            System.out.println("El personaje " + nombre + " ha sido creado muerto (vida negativa).");
+            this.vida = 0;
+        } else {
+            this.vida = vida;
+        }
+
         this.ataque = ataque;
         this.defensa = defensa;
         this.tipo = tipo;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombre() { 
+        return nombre; 
     }
-
-    public int getVida() {
-        return vida;
+    public int getVida() { 
+        return vida; 
+    }
+    public Tipo getTipo() { 
+        return tipo; 
     }
 
     public boolean estaVivo() {
@@ -30,7 +39,10 @@ public class Personaje {
     public void recibirDaño(int daño) {
         if (daño < 0) daño = 0;
         vida -= daño;
-        if (vida < 0) vida = 0;
+        if (vida <= 0) {
+            vida = 0;
+            System.out.println(nombre + " ha muerto.");
+        }
     }
 
     public void atacar(Personaje enemigo) {
