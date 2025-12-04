@@ -1,3 +1,5 @@
+package Agenda.src;
+
 public class Agenda {
     public static void main(String[] args) throws Exception {
        //Necesito tener un vector de personas

@@ -1,3 +1,5 @@
+package Agenda.src;
+
 public class Persona {
     private String nombre;
     private String domicilio;
