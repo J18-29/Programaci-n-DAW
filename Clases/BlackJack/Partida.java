@@ -30,25 +30,25 @@ public class Partida {
 
             System.out.println("\n--- NUEVA PARTIDA ---");
 
-            // Crear y barajar la baraja al inicio de cada partida
+            // Creamos y barajamos la baraja al inicio de cada partida
             baraja = new Baraja();
             baraja.barajar();
 
-            // Limpiar las manos del jugador y del crupier al inicio de cada partida
+            // Limpiamos las manos del jugador y del crupier al inicio de cada partida
             jugador.limpiarMano();
             crupier.limpiarMano();
 
-            // Pedir al jugador cuánto desea apostar
+            // Pedimos al jugador cuánto desea apostar
             System.out.println("Tienes " + jugador.fondos + "€. ¿Cuánto deseas apostar?");
             int apuesta = sc.nextInt();
 
-            // Validar que la apuesta sea correcta (no negativa ni superior a los fondos)
+            // Validamos que la apuesta sea correcta (no negativa ni superior a los fondos)
             while (apuesta > jugador.fondos || apuesta <= 0) {
                 System.out.println("Apuesta no válida. Intenta de nuevo:");
                 apuesta = sc.nextInt();
             }
 
-            // Repartir cartas iniciales: dos al jugador y una al crupier
+            // Repartimos cartas iniciales: dos al jugador y una al crupier
             jugador.addCarta(baraja.repartirCarta());
             jugador.addCarta(baraja.repartirCarta());
             crupier.addCarta(baraja.repartirCarta());
@@ -81,7 +81,7 @@ public class Partida {
     private void turnoJugador(Scanner sc) {
         String opcion;
         do {
-            // Mostrar la mano actual del jugador
+            // Mostramos la mano actual del jugador
             jugador.mostrarMano();
             System.out.print("¿Quieres otra carta? (s/n): ");
             opcion = sc.next();
