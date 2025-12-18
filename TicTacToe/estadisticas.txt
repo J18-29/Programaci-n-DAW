@@ -1,0 +1,5 @@
+int jugador1 = 3; // 3 victorias
+int jugador2 = 2; // 2 victorias
+
+jugador1++;       // ahora jugador1 = 4
+jugador2 = 2;     // jugador2 sigue = 2

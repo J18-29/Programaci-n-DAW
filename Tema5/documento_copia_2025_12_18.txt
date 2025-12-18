@@ -1,0 +1,5 @@
+Hola mundo
+Este es un archivo de prueba
+Hola a todos
+Este archivo sirve para contar palabras
+Hola Hola hola
