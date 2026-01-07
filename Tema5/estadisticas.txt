@@ -1,2 +1,0 @@
-jugador1=2
-jugador2=0
